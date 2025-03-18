@@ -94,8 +94,8 @@ Accessible in the **FUNCTIONS** section of the Particle Console device view:
 - `MLAC,#` – Sets **Always Connected Mode** with observation interval `# = 1-6, 10, 12, 15, 20, or 30` minutes (creates MAINLOOP.TXT).
 - `5MDIST` – Sets distance sensor type to **5M** (creates `5MDIST.TXT`).
 - `10MDIST` – Sets distance sensor type to **10M** (deletes `5MDIST.TXT`).
-- `SOHR,#` -
-- `SOHR,OFF`
+- `SOHR,#` - Stay On Hour `# = 0-23 UTC`
+- `SOHR,OFF` - Turn off Stay On Hour
 
 ## SD Card Requirements
 - **Max Size:** 32GB (Larger cards are not supported)
