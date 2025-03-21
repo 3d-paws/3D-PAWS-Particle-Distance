@@ -22,7 +22,7 @@
   - VMEL7700 (LUX)
 
 ### Particle Event Type: `INFO`
-- Station information is sent to Particle as Event Type "INFO."
+- Station information is sent to Particle as Event Type "INFO".
 - This occurs at boot and can also be triggered via the Particle Cloud console using the `DoAction` function.
 
 ### Serial Monitor Support
