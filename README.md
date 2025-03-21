@@ -25,7 +25,7 @@
 - Station information is sent to Particle as Event Type "INFO."
 - This occurs at boot and can also be triggered via the Particle Cloud console using the `DoAction` function.
 
-## Serial Monitor Support
+### Serial Monitor Support
 - Enabling serial output:
   - Connect a jumper wire between Particle pin `D8` and ground before booting.
   - Serial output is configured to 9600 baud.
@@ -41,7 +41,7 @@
   - After 60 seconds, normal boot continues.
 - Example serial output includes initialization details and connected devices.
 
-## 3rd Party SIM Support
+### 3rd Party SIM Support
 - The Particle Boron has an external SIM slot.
 - The current SIM state (`INTERNAL` or `EXTERNAL`) is stored in NVRAM.
 - Control SIM usage via an SD card file `SIM.TXT`:
@@ -69,7 +69,7 @@
 
 📌 **Reference:** [Particle 3rd-Party SIM Guide](https://docs.particle.io/troubleshooting/guides/connectivity-troubleshooting/using-3rd-party-sim-cards/)
 
-## Argon WiFi Board Support
+### Argon WiFi Board Support
 - Initial WiFi setup via the Particle mobile app.
 - To modify WiFi credentials:
   - Use the app or create a file `WIFI.TXT` on the SD card.
