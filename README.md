@@ -8,6 +8,19 @@
 ### Particle Event Type: `DS`
 - Observations are transmitted under the Particle Event Type "DS," which stands for Distance Sensor.
 
+### Supported Sensors
+- Distance Sensor on pin A4
+  - 5-meter sensors (MB7360, MB7369, MB7380, and MB7389)
+  - 10-meter sensors (MB7363, MB7366, MB7383, and MB7386)
+- I2C Sensors
+  - BMP280, BME280, BMP390, BMP388 (Temperature, Pressure & altitude)
+  - HTU21DF (Humidity & Temperature Sensor)
+  - MCP9808 (Temperature sensor)
+  - SHT31 (Temperature & Humidity sensor)
+  - HIH8000 (Temperature & Humidity sensor)
+  - SI1145 (UV/IR/Visible Light Sensor)
+  - VMEL7700 (LUX)
+
 ### Particle Event Type: `INFO`
 - Station information is sent to Particle as Event Type "INFO."
 - This occurs at boot and can also be triggered via the Particle Cloud console using the `DoAction` function.
@@ -90,12 +103,12 @@ Accessible in the **FUNCTIONS** section of the Particle Console device view:
 - `SEND` – Takes an observation and transmits it.
 - `INFO` – Sends station information (`INFO` event).
 - `MLLP,#` – Sets **Low Power Mode** with observation interval `# = 15, 20, or 30` minutes.
-- `BLDS,#` – Sets **BaseLine Distance**. `#=1-4095` (creates BLDIST.TXT), `#=0` (deletes BLDIST.TXT).
+- `BLDS,#` – Sets **BaseLine Distance**. `# = 1-4095` (creates BLDIST.TXT), `#=0` (deletes BLDIST.TXT).
 - `MLAC,#` – Sets **Always Connected Mode** with observation interval `# = 1-6, 10, 12, 15, 20, or 30` minutes (creates MAINLOOP.TXT).
 - `5MDIST` – Sets distance sensor type to **5M** (creates `5MDIST.TXT`).
 - `10MDIST` – Sets distance sensor type to **10M** (deletes `5MDIST.TXT`).
-- `SOHR,#` - Stay On Hour `# = 0-23 UTC`
-- `SOHR,OFF` - Turn off Stay On Hour
+- `SOHR,#` – Stay On Hour `# = 0-23 UTC`
+- `SOHR,OFF` – Turn off Stay On Hour
 
 ## SD Card Requirements
 - **Max Size:** 32GB (Larger cards are not supported)
@@ -111,9 +124,9 @@ Accessible in the **FUNCTIONS** section of the Particle Console device view:
 /WIFI.TXT     # Stores WiFi credentials for Argon boards
 /INFO.TXT     # Stores latest station information (overwritten on each `INFO` call)
 /MAINLOOP.TXT # Controls Main Loop behavior
-5MDIST.TXT    # Indicates 5M distance sensor configuration
-BLDIST.TXT    # File used to set distance sensor baseline. If non zero then (distance = baseline - reading) else reading.
-LPSOHR.TXT    # Store the Low Power Stay On Hour Store
+/5MDIST.TXT    # Indicates 5M distance sensor configuration
+/BLDIST.TXT    # File used to set distance sensor baseline. If non zero then (distance = baseline - reading) else reading.
+/LPSOHR.TXT    # Store the Low Power Stay On Hour Store
 ```
 
 ### `MAINLOOP.TXT` Format
