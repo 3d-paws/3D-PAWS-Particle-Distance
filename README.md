@@ -46,7 +46,7 @@
 - The current SIM state (`INTERNAL` or `EXTERNAL`) is stored in NVRAM.
 - Control SIM usage via an SD card file `SIM.TXT`:
 
-### `SIM.TXT` Configuration Options
+#### `SIM.TXT` Configuration Options
 1. **APN, Username, and Password**:
    ```
    AUP epc.tmobile.com username password
