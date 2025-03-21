@@ -13,11 +13,11 @@
   - 5-meter sensors (MB7360, MB7369, MB7380, and MB7389)
   - 10-meter sensors (MB7363, MB7366, MB7383, and MB7386)
 - I2C Sensors
-  - BMP280, BME280, BMP390, BMP388 (Temperature, Pressure & altitude)
+  - BMP280, BME280, BMP390, BMP388 (Temperature, Pressure & Altitude)
   - HTU21DF (Humidity & Temperature Sensor)
-  - MCP9808 (Temperature sensor)
-  - SHT31 (Temperature & Humidity sensor)
-  - HIH8000 (Temperature & Humidity sensor)
+  - MCP9808 (Temperature Sensor)
+  - SHT31 (Temperature & Humidity Sensor)
+  - HIH8000 (Temperature & Humidity Sensor)
   - SI1145 (UV/IR/Visible Light Sensor)
   - VMEL7700 (LUX)
 
